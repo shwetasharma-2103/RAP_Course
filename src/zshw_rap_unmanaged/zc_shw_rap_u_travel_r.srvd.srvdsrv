@@ -1,0 +1,11 @@
+@EndUserText.label: 'Service Definition for ZC_SHW_RAP_U_TRAVEL'
+define service ZC_SHW_RAP_U_TRAVEL_R {
+  expose ZC_SHW_RAP_U_TRAVEL as travel;
+  expose ZC_SHW_RAP_U_BOOKING as booking;
+  expose /DMO/I_Agency as Agency;
+  expose /DMO/I_Customer as Customer;
+  expose I_Currency as Currency;
+  expose /DMO/I_Carrier as Carrier;
+  expose /DMO/I_Connection as Connection;
+  expose /DMO/I_Flight as Flight;
+}

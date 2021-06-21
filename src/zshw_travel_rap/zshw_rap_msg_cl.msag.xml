@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for SHW RAP Travel</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Begin date &amp;1 must not be after End Daye &amp;2 for Travel &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Begin Date &amp;1 must be on or after System Date.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Customer &amp;1 unknown.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Agency &amp;1 unknown.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZSHW_RAP_MSG_CL</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>You are not authorized to perform this activity.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

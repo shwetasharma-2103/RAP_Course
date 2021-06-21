@@ -1,24 +1,21 @@
-@EndUserText.label: 'Consumption view for SHW RAP Travel'
+@EndUserText.label: 'Projection ZSHW_RAP_U_TRAVEL'
 @AccessControl.authorizationCheck: #CHECK
 @Metadata.allowExtensions: true
 @Search.searchable: true
 @ObjectModel.semanticKey: ['TravelID']
-define root view entity ZC_SHW_RAP_TRAVEL 
-        as projection on ZI_SHW_RAP_TRAVEL as Travel {
-        
-  key TravelUuid,
+define root view entity ZC_SHW_RAP_U_TRAVEL as projection on ZSHW_RAP_U_TRAVEL {
   
   @Search.defaultSearchElement: true
-  TravelId,
+  key TravelId,
   
   @Search.defaultSearchElement: true
-//  @ObjectModel.text.element: ['AgencyName']
+  @ObjectModel.text.element: ['AgencyName']
   @Consumption.valueHelpDefinition: [{ 
                       entity: { name: '/DMO/I_AGENCY',
                                 element: 'AgencyID' } }]
   AgencyId,
   
-  _Agency.Name as AgencyName,
+  _Agency.name as AgencyName,
   
   @Search.defaultSearchElement: true
   @ObjectModel.text.element: ['CustomerName']
@@ -27,7 +24,7 @@ define root view entity ZC_SHW_RAP_TRAVEL
                                 element: 'CustomerID' } }]
   CustomerId,
   
-  _Customer.LastName as CustomerName,
+  _Customer.last_name as CustomerName,
   
   BeginDate,
   
@@ -47,7 +44,7 @@ define root view entity ZC_SHW_RAP_TRAVEL
   
   Description,
   
-  TravelStatus,
+  Status,
   
   @Semantics.user.createdBy: true
   CreatedBy,
@@ -62,12 +59,9 @@ define root view entity ZC_SHW_RAP_TRAVEL
   LastChangedAt,
   
   
-  @Semantics.systemDateTime.localInstanceLastChangedAt: true
-  LocalLastChangedAt,
   /* Associations */
   _Agency,
-  _Booking : redirected to composition child ZC_SHW_RAP_BOOKING,
+  _Booking : redirected to composition child ZC_SHW_RAP_U_BOOKING,
   _Currency,
   _Customer
-  
 }

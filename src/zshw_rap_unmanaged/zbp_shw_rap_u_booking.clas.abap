@@ -1,0 +1,5 @@
+CLASS zbp_shw_rap_u_booking DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zshw_rap_u_travel.
+ENDCLASS.
+
+CLASS zbp_shw_rap_u_booking IMPLEMENTATION.
+ENDCLASS.

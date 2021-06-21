@@ -1,17 +1,15 @@
-@EndUserText.label: 'Consumption view for SHW RAP Booking'
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Projection for ZC_SHW_RAP_U_BOOKING'
+@AccessControl.authorizationCheck: #CHECK
 @Metadata.allowExtensions: true
 @Search.searchable: true
-define view entity ZC_SHW_RAP_BOOKING
-  as projection on ZI_SHW_RAP_BOOKING as Booking
-{
-
-  key BookingUuid,
-
-      TravelUuid,
-
+define view entity ZC_SHW_RAP_U_BOOKING as projection on ZSHW_RAP_U_BOOKING {
+      
       @Search.defaultSearchElement: true
-      BookingId,
+      key TravelId,
+        
+      @Search.defaultSearchElement: true
+      key BookingId,
+      
 
       BookingDate,
 
@@ -54,19 +52,11 @@ define view entity ZC_SHW_RAP_BOOKING
       @Semantics.currencyCode: true
       CurrencyCode,
       
-      @Semantics.user.createdBy: true
-      CreatedBy,
-      
-      @Semantics.user.lastChangedBy: true  
-      LastChangedBy,
-      
-       @Semantics.systemDateTime.localInstanceLastChangedAt: true  
-      LocalLastChangedAt,
       /* Associations */
       _Carrier ,
       _Connection,
       _Currency,
       _Customer,
       _Flight,
-      _Travel : redirected to parent ZC_SHW_RAP_TRAVEL 
+      _Travel : redirected to parent ZC_SHW_RAP_U_TRAVEL
 }

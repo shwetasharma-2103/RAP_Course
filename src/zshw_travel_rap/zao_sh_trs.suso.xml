@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZAO_SH_TRS</OBJCT>
+    <FIEL1>ZA_SHW_TRS</FIEL1>
+    <FIEL2>ACTVT</FIEL2>
+    <OCLSS>CPAE</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZAO_SH_TRS</OBJECT>
+    <TTEXT>Auth object for SHW RAP travel Status</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZAO_SH_TRS</OBJCT>
+   </TOBJVORFLG>
+   <TACTZ>
+    <TACTZ>
+     <BROBJ>ZAO_SH_TRS</BROBJ>
+     <ACTVT>01</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZAO_SH_TRS</BROBJ>
+     <ACTVT>02</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZAO_SH_TRS</BROBJ>
+     <ACTVT>03</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZAO_SH_TRS</BROBJ>
+     <ACTVT>06</ACTVT>
+    </TACTZ>
+   </TACTZ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

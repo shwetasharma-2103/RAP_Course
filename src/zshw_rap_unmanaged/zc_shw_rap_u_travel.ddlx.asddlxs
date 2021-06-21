@@ -4,9 +4,10 @@
       typeNamePlural: 'Travels',
       title: { type: #STANDARD, label: 'Travel', value: 'TravelId'} },
       presentationVariant: [{ sortOrder: [{ by: 'TravelId', direction: #DESC }] }]}
-annotate view ZC_SHW_RAP_TRAVEL with
+annotate view ZC_SHW_RAP_U_TRAVEL
+    with 
 {
-  @UI.facet: [{
+    @UI.facet: [{
       id: 'Travel',
       purpose: #STANDARD,
       type: #IDENTIFICATION_REFERENCE,
@@ -19,10 +20,6 @@ annotate view ZC_SHW_RAP_TRAVEL with
         position: 20,
         targetElement: '_Booking'
            }]
-
-  @UI:{ identification: [{ position: 10,
-                     label : 'TravelUUID' }] }
-  TravelUuid;
 
   @UI:{ lineItem: [{ position: 10 }],
         identification: [{ position: 20 }],
@@ -68,7 +65,7 @@ annotate view ZC_SHW_RAP_TRAVEL with
                       { type: #FOR_ACTION, dataAction: 'rejectTravel', label: 'RejectTravel' }
                     ],
      selectionField: [{ position: 40 }] }
-  TravelStatus;
+  Status;
 
   @UI.hidden: true
   CreatedBy;
@@ -82,7 +79,6 @@ annotate view ZC_SHW_RAP_TRAVEL with
   @UI.hidden: true
   LastChangedAt;
 
-  @UI.hidden: true
-  LocalLastChangedAt;
 
+    
 }
